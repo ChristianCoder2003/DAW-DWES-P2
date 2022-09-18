@@ -7,6 +7,7 @@
         <ul>
             <?php
                 $classMates = ["Alex", "Chris", "Esther", "Pol", "Sergio", "Nil"];
+                    //Con un foreach cojo cada nombre del array para mostrarlo en una lista
                     foreach ($classMates as $name) {
                         echo "<li>" . $name . "</li>";
                     }
