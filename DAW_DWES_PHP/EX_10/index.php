@@ -6,6 +6,8 @@ $array = [3 => "Chris", 4 => "Sergio", 2 => "Fran", 5 => "Alex", 1 => "Hugo"];
 echo "Array inicial: ";
 echo printArray($array) . "<br><br>";
 
+//Utilizando las funciones ksort (ordenar por clave) krsort (orden inverso por clave) y sort y rsort, ordenamos según
+//los parámetros pasados.
 function sortArray(array $arrayToOrder, string $order, string $sortingElement): array {
     if ($sortingElement == "Clave" && $order == "Ascendiente") {
         ksort($arrayToOrder, SORT_NUMERIC);
@@ -21,7 +23,7 @@ function sortArray(array $arrayToOrder, string $order, string $sortingElement): 
     return $arrayToOrder;
 }
 
-
+//Mostrar los diferentes tipos de combinaciones
 $array = sortArray($array, "Ascendiente", "Clave");
 echo "Array ordenado por Clave Ascendiente: ";
 echo printArray($array) . "<br><br>";
