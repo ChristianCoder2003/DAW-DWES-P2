@@ -1,4 +1,4 @@
-## ## Ejercicio 7
+## Ejercicio 7
 #### Todo funciona con éxito
 ### Explicación:
 
