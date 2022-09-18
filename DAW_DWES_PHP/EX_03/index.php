@@ -17,6 +17,7 @@
                 "COG" => ["Name" => "Andorra", "Code" => "178"],
                 "CPV" => ["Name" => "Cabo Verde", "Code" => "132    "]
             ];
+            //En el bucle foreach, cada país ($country) lo asociamos a su nombre con la variable $name y al código con $code
             foreach ($countries as $country => ["Name"=> $name, "Code"=> $code]) {
                 echo "El pais " . $name . " utiliza el codigo alfa-3 " . $country . " con codigo numerico: " . $code . "<br>";
             }
